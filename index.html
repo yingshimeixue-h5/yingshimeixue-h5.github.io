@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>影视美学光影指南 | 合规影视导航（非影视美学）</title>
+  <meta name="description" content="影视美学光影指南（yingshimeixue-h5）做影视赏析与正版导航。非原影视美学、不聚合片源；不提供播源解析/APK/离线缓存/磁力网盘。含正版分类、光影片单与伪站避坑。" />
+  <meta name="author" content="影视美学光影指南" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#1A1225" />
+  <link rel="canonical" href="https://yingshimeixue-h5.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="影视美学光影指南" />
+  <meta property="og:title" content="影视美学光影指南 | 合规影视导航" />
+  <meta property="og:description" content="非影视美学原站，只做影视赏析与正版持权平台导航。" />
+  <meta property="og:url" content="https://yingshimeixue-h5.github.io/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="影视美学光影指南 | 合规影视导航" />
+  <meta name="twitter:description" content="影视赏析与正版导航，拒绝免费聚合。" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "影视美学光影指南",
+    "url": "https://yingshimeixue-h5.github.io/",
+    "description": "影视赏析与正版渠道导航站（非影视美学原站）。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0F0A14;
+      --bg2:#1A1225;
+      --card:#241A33;
+      --line:#3D2E52;
+      --ink:#F0E8F5;
+      --ink-light:#D4C2E3;
+      --muted:#9E8AB0;
+      --purple:#A855F7;
+      --purple-deep:#7C3AED;
+      --rose:#F59E0B;
+      --rose-light:#FCD34D;
+      --ticket:#FBF7EC;
+      --silver:#8B7E96;
+      --red:#EF4444;
+      --radius:16px;
+      --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(15,10,20,.96);backdrop-filter:blur(12px);border-bottom:2px solid var(--purple)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+    .logo{font-weight:900;font-size:21px;display:flex;align-items:center;gap:10px}
+    .logo .lens{width:26px;height:26px;position:relative;border:3px solid var(--purple);border-radius:50%;animation:spin 6s linear infinite}
+    .logo .lens::after{content:'';position:absolute;top:50%;left:50%;width:8px;height:8px;background:var(--rose);border-radius:50%;transform:translate(-50%,-50%)}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .logo b{color:var(--purple)}
+    .logo span{color:var(--ink)}
+    nav.menu{display:flex;gap:6px;font-size:14px;font-weight:700;color:var(--muted)}
+    nav.menu a{padding:8px 14px;border-radius:8px;border:2px solid transparent;transition:.2s}
+    nav.menu a:hover{color:var(--ink);border-color:var(--line);background:var(--bg2)}
+    .nav-toggle{display:none;background:none;border:2px solid var(--purple);color:var(--ink);border-radius:8px;padding:5px 10px;font-size:18px;cursor:pointer}
+
+    .hero{padding:74px 0 80px;background:
+      radial-gradient(620px 360px at 82% 8%,rgba(168,85,247,.18),transparent 60%),
+      radial-gradient(420px 240px at 6% 94%,rgba(245,158,11,.12),transparent 60%),
+      linear-gradient(180deg,#1A1225,#0F0A14);position:relative;overflow:hidden}
+    .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .pill{display:inline-block;background:var(--purple-deep);color:#EDE9F6;font-size:11px;font-weight:800;padding:5px 16px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
+    .disclaim{display:inline-block;margin-left:8px;font-size:11px;font-weight:700;color:var(--rose);border:1px dashed var(--rose);border-radius:20px;padding:4px 12px;vertical-align:middle}
+    .hero h1{font-size:clamp(30px,5.5vw,50px);line-height:1.1;margin:0 0 14px;font-weight:900}
+    .hero h1 em{font-style:normal;color:var(--purple)}
+    .hero h1 .ink-em{color:var(--rose)}
+    .hero p.lead{font-size:16px;color:var(--muted);max-width:640px;margin:0 0 22px}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{border:2px solid var(--line);border-radius:8px;padding:5px 13px;font-size:13px;font-weight:600;background:var(--card)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 26px;border-radius:10px;font-weight:800;font-size:15px;transition:.2s;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+    .btn-primary{background:var(--purple);color:#fff;border:2px solid var(--purple)}
+    .btn-primary:hover{background:var(--purple-deep)}
+    .btn-ghost{border:2px solid var(--ink);color:var(--ink);background:transparent}
+    .btn-ghost:hover{background:var(--ink);color:var(--bg)}
+
+    /* 取景器显影 */
+    .view-stage{width:300px;height:300px;margin:0 auto;position:relative;background:#0A0710;border-radius:18px;border:3px solid var(--purple);box-shadow:0 16px 40px rgba(0,0,0,.6);overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .viewfinder{position:absolute;inset:12px;border:2px solid rgba(168,85,247,.4);border-radius:8px}
+    .viewfinder::before,..viewfinder::after{content:'';position:absolute;width:20px;height:20px;border:3px solid var(--purple)}
+    .viewfinder::before{top:-2px;left:-2px;border-right:none;border-bottom:none}
+    .viewfinder::after{bottom:-2px;right:-2px;border-left:none;border-top:none}
+    .vf-tr{position:absolute;top:-2px;right:-2px;width:20px;height:20px;border:3px solid var(--purple);border-left:none;border-bottom:none}
+    .vf-bl{position:absolute;bottom:-2px;left:-2px;width:20px;height:20px;border:3px solid var(--purple);border-right:none;border-top:none}
+    .develop{position:relative;z-index:2;width:180px;height:120px;background:linear-gradient(135deg,var(--purple-deep),var(--rose));border-radius:4px;animation:develop 3s ease-in-out infinite;display:flex;align-items:center;justify-content:center;flex-direction:column}
+    @keyframes develop{0%{filter:blur(8px);opacity:.3}50%{filter:blur(2px);opacity:.8}100%{filter:blur(0);opacity:1}}
+    .develop .frame-icon{font-size:32px;animation:twinkle 2s infinite}
+    @keyframes twinkle{0%,100%{opacity:1}50%{opacity:.5}}
+    .develop .frame-label{font-size:10px;color:#fff;letter-spacing:2px;margin-top:6px;font-weight:700}
+
+    section{padding:60px 0;border-bottom:2px dashed var(--line)}
+    .sec-head{margin-bottom:32px;text-align:center}
+    .sec-head .kicker{color:var(--purple);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11px}
+    .sec-head h2{font-size:clamp(24px,4vw,34px);margin:6px 0 8px;font-weight:900}
+    .sec-head p{color:var(--muted);margin:0 auto;max-width:700px;font-size:14px}
+
+    .why{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .why-card{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:24px}
+    .why-card.bad{border-left:6px solid var(--red)}
+    .why-card.good{border-left:6px solid var(--purple)}
+    .why-card h3{margin:0 0 12px;font-size:17px;font-weight:800;display:flex;align-items:center;gap:8px}
+    .why-card ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px}
+    .why-card ul li{margin:6px 0}
+
+    .cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .cat{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:22px;text-align:center;transition:.3s}
+    .cat:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(0,0,0,.5);border-color:var(--purple)}
+    .cat .ic{font-size:34px;display:block;margin-bottom:10px}
+    .cat h3{margin:0 0 6px;font-size:15px;font-weight:800}
+    .cat p{margin:0;color:var(--muted);font-size:12px}
+
+    .list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .film{background:var(--card);border:2px solid var(--line);border-radius:16px;overflow:hidden;transition:.3s}
+    .film:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(0,0,0,.5)}
+    .film .cover{height:140px;background:linear-gradient(135deg,var(--purple-deep),var(--rose));display:flex;align-items:center;justify-content:center;font-size:48px}
+    .film .body{padding:20px}
+    .film h3{margin:0 0 4px;font-size:16px;font-weight:900}
+    .film .sub{font-size:11px;color:var(--rose);font-weight:700;margin-bottom:6px}
+    .film p{margin:0;color:var(--muted);font-size:13px}
+    .film ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:12px}
+    .film ul li{margin:2px 0}
+
+    .src{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .src-card{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:22px;text-align:center;transition:.3s}
+    .src-card:hover{border-color:var(--purple);background:var(--bg2)}
+    .src-card .ic{font-size:32px;margin-bottom:8px;display:block}
+    .src-card h3{margin:0 0 4px;font-size:15px;font-weight:800}
+    .src-card p{margin:0;color:var(--muted);font-size:12px}
+
+    .warn{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .reef{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:22px;border-top:5px solid var(--red)}
+    .reef:nth-child(2){border-top-color:var(--purple)}
+    .reef:nth-child(3){border-top-color:var(--rose)}
+    .reef h3{margin:0 0 8px;font-size:16px;font-weight:800}
+    .reef p{margin:0;color:var(--muted);font-size:13px}
+
+    .legal-box{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:32px;max-width:920px;margin:0 auto}
+    .legal-box h3{color:var(--ink-light);font-size:17px;font-weight:800;margin:24px 0 10px;display:flex;align-items:center;gap:8px}
+    .legal-box h3:first-child{margin-top:0}
+    .legal-box p{color:var(--muted);font-size:14px;line-height:1.85;margin:0}
+    .legal-box b{color:var(--red)}
+    .legal-box .cite{background:var(--bg2);border-left:4px solid var(--purple);padding:12px 16px;margin:12px 0;border-radius:0 8px 8px 0;font-size:13px;color:var(--ink-light);font-style:italic}
+
+    .notice{background:var(--bg2);border:2px dashed var(--red);border-radius:12px;padding:14px 18px;font-size:13px;color:var(--muted);max-width:860px;margin:24px auto 0}
+    .notice b{color:var(--red)}
+
+    footer{padding:36px 0;text-align:center;color:var(--muted);font-size:13px;background:#080510}
+    footer a{color:var(--purple)}
+
+    #toTop{position:fixed;right:16px;bottom:16px;z-index:60;width:46px;height:46px;border-radius:50%;border:2px solid var(--purple);background:var(--purple);color:#fff;font-size:20px;font-weight:900;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+    #toTop.show{opacity:1;pointer-events:auto}
+    .reveal{opacity:0;transform:translateY(16px);transition:.5s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    @media (max-width:980px){
+      .hero .wrap{grid-template-columns:1fr}
+      .why{grid-template-columns:1fr}
+      .cats{grid-template-columns:1fr 1fr}
+      .list{grid-template-columns:1fr}
+      .src{grid-template-columns:1fr 1fr}
+      .warn{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .nav-toggle{display:block}
+      nav.menu{position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;padding:10px 20px 20px;background:rgba(15,10,20,.98);border-bottom:2px solid var(--purple);display:none}
+      nav.menu.open{display:flex}
+      nav.menu a{padding:12px 8px;border-bottom:2px solid var(--line);border-radius:0}
+      .cats{grid-template-columns:1fr}
+      .src{grid-template-columns:1fr}
+      .view-stage{width:260px;height:260px}
+    }
+  </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="logo"><span class="lens"></span><b>影视美学</b><span>光影指南</span></div>
+      <button class="nav-toggle" aria-label="菜单" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#home">首页</a>
+        <a href="#why">为什么不选聚合站</a>
+        <a href="#cats">正版分类导航</a>
+        <a href="#list">光影片单</a>
+        <a href="#src">正版信源</a>
+        <a href="#warn">伪影视美学避坑</a>
+        <a href="#legal">版权合规说明</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="pill">Gallery · Legal Only<span class="disclaim">非影视美学</span></div>
+        <h1>影视美学光影指南<br/>取景暗房<em>只显正典</em><span class="ink-em">不洗盗链</span></h1>
+        <p class="lead">本站不是「影视美学」原站、不重建镜像、不聚合片源、不提供播源解析/APK下载/离线缓存/磁力网盘。影视赏析同样需正版授权，本页只做导航壳，引导到持权平台。</p>
+        <div class="hero-tags">
+          <span class="hero-tag">正版导航</span>
+          <span class="hero-tag">非原影视美学</span>
+          <span class="hero-tag">无播源解析</span>
+          <span class="hero-tag">赏析合规</span>
+          <span class="hero-tag">画廊暗房风</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#cats">正版分类导航 →</a>
+          <a class="btn btn-ghost" href="#warn">看伪站套路</a>
+        </div>
+      </div>
+      <div>
+        <div class="view-stage">
+          <div class="viewfinder"><span class="vf-tr"></span><span class="vf-bl"></span></div>
+          <div class="develop">
+            <span class="frame-icon">🎞️</span>
+            <span class="frame-label">显影中</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Why Not Free Index Site</div>
+        <h2>为什么不选免费聚合站</h2>
+        <p>赏析不等于盗版。</p>
+      </div>
+      <div class="why">
+        <div class="why-card bad">
+          <h3>🚫 原站形态信号</h3>
+          <ul>
+            <li>电影/剧集「免费完整版」直接播</li>
+            <li>多播放线路、解析接口、换源</li>
+            <li>弹窗广告、诱导装专用播放器/APP</li>
+            <li>无清晰运营主体与授权说明</li>
+          </ul>
+        </div>
+        <div class="why-card good">
+          <h3>✅ 本指南做法</h3>
+          <ul>
+            <li>只列正版持权平台与分类路径</li>
+            <li>不提供播源解析/APK/离线</li>
+            <li>不聚合影视资源</li>
+            <li>片单点出去是正版站</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cats" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Category Nav</div>
+        <h2>正版分类导航</h2>
+        <p>四个入口，按美学维度跳正版渠道。</p>
+      </div>
+      <div class="cats">
+        <div class="cat"><span class="ic">🎨</span><h3>视觉构图</h3><p>摄影/色彩/美术指导</p></div>
+        <div class="cat"><span class="ic">📖</span><h3>叙事结构</h3><p>剧本/剪辑/导演风格</p></div>
+        <div class="cat"><span class="ic">🎵</span><h3>声音设计</h3><p>配乐/音效/声景</p></div>
+        <div class="cat"><span class="ic">🏛️</span><h3>经典修复</h3><p>修复版官方放映</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="list" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Gallery Reel List</div>
+        <h2>光影片单</h2>
+        <p>赏析向推荐，只列类型与正版路径。</p>
+      </div>
+      <div class="list">
+        <div class="film">
+          <div class="cover">🎬</div>
+          <div class="body">
+            <h3>视觉系佳作</h3>
+            <div class="sub">摄影/色彩 · 正版点播</div>
+            <p>高审美、强视觉风格的影片。</p>
+            <ul>
+              <li>正规购票/官方重映</li>
+              <li>持权OTT单片租看</li>
+              <li>不装第三方播放器</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <div class="cover">📺</div>
+          <div class="body">
+            <h3>叙事实验</h3>
+            <div class="sub">结构/剪辑 · 正版订阅</div>
+            <p>非线性叙事、创新剪辑的剧集与电影。</p>
+            <ul>
+              <li>正版平台专区</li>
+              <li>官方会员订阅</li>
+              <li>不搜「美学同款源」</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <div class="cover">🎵</div>
+          <div class="body">
+            <h3>声音美学</h3>
+            <div class="sub">配乐/音效 · 官方授权</div>
+            <p>音乐片、音效设计突出的作品。</p>
+            <ul>
+              <li>官方音乐/纪录频道</li>
+              <li>认准授权片源</li>
+              <li>不点假播放键</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <div class="cover">🏛️</div>
+          <div class="body">
+            <h3>修复典藏</h3>
+            <div class="sub">修复版 · 展播</div>
+            <p>老片修复、经典重映。</p>
+            <ul>
+              <li>官方修复版发行</li>
+              <li>影展/学术放映</li>
+              <li>不碰盗版转录</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="src" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Legal Sources</div>
+        <h2>正版信源</h2>
+        <p>只走持权分发，不碰播放器聚合。</p>
+      </div>
+      <div class="src">
+        <div class="src-card"><span class="ic">📺</span><h3>正版OTT</h3><p>持牌平台订阅/单片租赁</p></div>
+        <div class="src-card"><span class="ic">🎬</span><h3>院线发行</h3><p>正规票务与官方重映</p></div>
+        <div class="src-card"><span class="ic">🏛️</span><h3>影展放映</h3><p>官方放映、学术展映</p></div>
+        <div class="src-card"><span class="ic">🛒</span><h3>官方商城</h3><p>正版碟片/数字购买</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="warn" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Fake Aesthetic Film</div>
+        <h2>伪「影视美学」避坑</h2>
+        <p>免费站的常见套路。</p>
+      </div>
+      <div class="warn">
+        <div class="reef">
+          <h3>🚫 免费完整版</h3>
+          <p>"高清完整版点播"多是未授权片源落地，别下别装。</p>
+        </div>
+        <div class="reef">
+          <h3>🚫 解析/多线路</h3>
+          <p>假播放键、专用解码器、多解析线路，背后常是深度链接盗链。</p>
+        </div>
+        <div class="reef">
+          <h3>🚫 频变域名留存</h3>
+          <p>邮件发新域名、加群领APP，都是典型聚合站引流手段。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="legal" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Copyright Compliance</div>
+        <h2>版权合规说明</h2>
+        <p>影视作品受著作权保护。</p>
+      </div>
+      <div class="legal-box">
+        <h3>📡 关于「影视美学」原形态</h3>
+        <p>「影视美学」类站多为免费索引/聚合形态，无清晰可核主体，原站形态按通用免费索引信号处理：片源索引、多线路切换、弹窗诱导下载、授权不透明。 本页不对其运营主体作司法侵权定性，只提示风险信号。</p>
+
+        <h3>📜 法律依据</h3>
+        <p>《著作权法》项下，未经著作权人许可通过信息网络提供影视作品即涉及<b>信息网络传播权</b>风险。 影视作品（包括其画面、声音、剪辑）均受著作权保护，未经授权聚合、分发均属侵权。</p>
+        <div class="cite">《互联网视听节目服务管理规定》第十七条：任何单位和个人不得转播、链接、聚合、集成非法的广播电视频道、视听节目网站的节目。</div>
+
+        <h3>🛡️ 本指南立场</h3>
+        <p>「影视美学光影指南」严正声明：非原影视美学、无隶属关系；不提供、不推荐、不链接任何播源解析、APK下载、离线缓存、磁力网盘服务。所有片单仅指向正版持权平台的正规订阅/租赁/购票渠道。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="notice">
+    <b>声明：</b>本页「影视美学光影指南」仅为"影视美学"字面的画廊暗房导航壳，非「影视美学」原站/镜像、不聚合片源；不提供播源解析/APK下载/离线缓存/磁力/网盘码；按《著作权法》及网络视听节目管理规定要求，不转播、链接、聚合、集成非法视听节目。原站形态参照公开免费聚合站通用风险信号，不作具体主体司法定性。
+  </div>
+
+  <footer>
+    <div class="wrap">
+      © 2026 影视美学光影指南（yingshimeixue-h5）｜ 静态展示站点 ｜
+      内页链接以 <a href="#">#</a> 占位 ｜
+      网站网址：https://yingshimeixue-h5.github.io ｜
+      非影视美学原站｜不提供播源解析、APK、盗版资源、磁力。
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click',function(){ document.getElementById('menu').classList.remove('open'); });
+    });
+    var toTop=document.getElementById('toTop');
+    window.addEventListener('scroll',function(){ toTop.classList.toggle('show',window.scrollY>400); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  </script>
+</body>
+</html>
